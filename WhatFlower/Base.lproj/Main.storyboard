@@ -17,16 +17,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HOS-Cs-KF4">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="393"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HOS-Cs-KF4" secondAttribute="height" multiplier="1:1" id="Kdo-PN-b9R"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="YMp-xC-kQE">
+                                <rect key="frame" x="16" y="512" width="361" height="322"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HOS-Cs-KF4" secondAttribute="trailing" id="0D1-nQ-zv6"/>
-                            <constraint firstItem="HOS-Cs-KF4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4dp-tc-Ity"/>
-                            <constraint firstItem="HOS-Cs-KF4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IrQ-wK-h3t"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HOS-Cs-KF4" secondAttribute="bottom" id="o9k-k1-tbF"/>
+                            <constraint firstItem="HOS-Cs-KF4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2hJ-wp-6hb"/>
+                            <constraint firstItem="YMp-xC-kQE" firstAttribute="top" secondItem="HOS-Cs-KF4" secondAttribute="bottom" constant="16" id="8qR-7h-11U"/>
+                            <constraint firstItem="YMp-xC-kQE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CyW-7x-0Bh"/>
+                            <constraint firstItem="HOS-Cs-KF4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VQl-FG-1zq"/>
+                            <constraint firstItem="HOS-Cs-KF4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fA5-UE-8oN"/>
+                            <constraint firstItem="YMp-xC-kQE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="16" id="hUo-MS-IVd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YMp-xC-kQE" secondAttribute="trailing" constant="16" id="hZw-8y-n10"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Xwg-BW-pGP">
@@ -38,11 +50,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="HOS-Cs-KF4" id="JRq-Xp-RPp"/>
+                        <outlet property="label" destination="YMp-xC-kQE" id="lTI-EF-sLZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055.7251908396945" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9dK-IC-bg6">
